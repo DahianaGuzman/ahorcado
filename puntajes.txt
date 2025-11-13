@@ -1,0 +1,3 @@
+usuario1,2,1
+daniela,4,2
+estiben,3,0
