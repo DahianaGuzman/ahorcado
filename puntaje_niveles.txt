@@ -1,0 +1,49 @@
+categoria:frutas
+facil: uva,kiwi,pera,mango,melon
+medio: manzana,sandia,fresa,piña,cereza
+dificil: granadilla,arándano,mandarina,maracuyá,pomelo
+
+categoria:paises
+facil: peru,chile,mexico,canada,brasil
+medio: argentina,colombia,italia,alemania,australia
+dificil: bangladesh,kazajistan,azerbaiyan,filipinas,uzbekistan
+
+categoria:animales
+facil: perro,gato,oso,rana,lobo
+medio: elefante,jirafa,delfin,camello,aguila
+dificil: ornitorrinco,hipopotamo,cameleon,anfibio,rinoceronte
+
+categoria:deportes
+facil: futbol,tenis,golf,natacion,rugby
+medio: voleibol,baloncesto,boxeo,patinaje,surf
+dificil: halterofilia,escalada,parapente,taekwondo,esgrima
+
+categoria:profesiones
+facil: medico,actor,chef,barbero,piloto
+medio: arquitecto,ingeniero,abogado,profesor,periodista
+dificil: neurocirujano,criptografo,arqueologo,astronauta,psicoanalista
+
+categoria:cine
+facil: avatar,barbie,rocky,alien,hugo
+medio: titanic,gladiador,superman,batman,spiderman
+dificil: interestelar,oppenheimer,parasitos,interceptor,apocalipto
+
+categoria:universo
+facil: sol,luna,estrella,orbita,cometa
+medio: galaxia,planeta,asteroide,nebulosa,espacio
+dificil: supernova,agujero_negro,hipergigante,exoplaneta,cuasar
+
+categoria:mitologia
+facil: zeus,ares,odin,thor,loki
+medio: hercules,atenea,apollo,venus,medusa
+dificil: kraken,fenix,minotauro,quimera,leviatan
+
+categoria:comida
+facil: pan,sopa,arroz,arepa,taco
+medio: pizza,empanada,ensalada,lasagna,hamburguesa
+dificil: ramen,tempura,goulash,biryani,ratatouille
+
+categoria:instrumentos_musicales
+facil: piano,arpa,bajo,tambor,maracas
+medio: guitarra,flauta,violin,trompeta,saxofon
+dificil: clavicordio,contrabajo,armonio,oboe,mandolina
