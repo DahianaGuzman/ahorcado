@@ -56,12 +56,11 @@ def gestionar_jugador(nombre_usuario, nombre_archivo="puntajes.txt"):
         # Se agrega el nuevo usuario al final de la lista con valores predeterminados (0,0)
         linea_nueva_usuario = f"{nombre_usuario},0,0\n"
         datos_actualizados.append(linea_nueva_usuario)
-        print(f"➕ Usuario '{nombre_usuario}' no encontrado. Agregado al final con puntajes 0,0.\n")
+        print(f"\n➕ Usuario '{nombre_usuario}' no encontrado. Agregado al final con puntajes 0,0.\n")
 
     # 3. Reescribir el archivo completo con la lista de líneas actualizada
         with open(nombre_archivo, 'w', encoding='utf-8') as archivo:
             archivo.writelines(datos_actualizados)
-        print(f"✅ Archivo '{nombre_archivo}' reescrito exitosamente con los cambios.")
 
 def actualizar_puntajes(apodo, gano=False, perdio=False, nombre_archivo="puntajes.txt"):
     """
@@ -221,7 +220,7 @@ def jugar_partida(opcion, apodo):
             elif linea != "":
                 # Convertimos la línea en una lista usando split
                 lista_palabras = linea.split(",")              #corta el texto cada vez que encuentra una coma y crea una lista. Ejem:"pera,banano" da ["pera", "banano"].
-                categorias.append([categoria, lista_palabras]) #se usa una la lista categorias para crear una lista anidada con todas las categorias y sus elementos
+                categorias.append([categoria, lista_palabras]) #se usa la lista categorias para crear una lista anidada con todas las categorias y sus elementos
 
         # Cerrar el archivo
         archivo.close()
@@ -243,7 +242,6 @@ def jugar_partida(opcion, apodo):
         while intentos > 0 and "_" in oculta:
             print("\nPalabra:", " ".join(oculta))  #se le agrega espacios con .join entre cada elemento (en este caso los guiones)
             print("Intentos restantes:", intentos)
-            print("Letras usadas:", letras_usadas) #eliminar
             imprimir_ahorcado(intentos_fallidos=6-intentos)
 
 
@@ -281,22 +279,13 @@ def jugar_partida(opcion, apodo):
             actualizar_puntajes(apodo, gano= False, perdio = True)
             imprimir_ahorcado(intentos_fallidos=6)
 
-def limpiar_archivo(nombre_archivo="puntajes.txt"):
-    """Vacía el contenido de un archivo, dejándolo en blanco."""
-    with open(nombre_archivo, 'w', encoding='utf-8') as archivo:
-        pass
-    print(f"✅ Archivo '{nombre_archivo}' limpiado exitosamente. Está vacío ahora.")
+apodo = input('Ingresa tu nombre: ')
 
 opcion = menu()
 
-jugar_partida(opcion, apodo= 'Dahiana')
+jugar_partida(opcion, apodo= apodo)
 
-limpiar = input('\nDesea limpiar los puntajes? (Y/N): ').lower()
-if limpiar == 'y':
-    limpiar_archivo()
-    print('\nHasta luego.')
-else:
-    print('\nHasta luego.')
+
 
 
     
